@@ -5,15 +5,6 @@ from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, Float, Prim
 from sqlalchemy.orm import relationship
 from database import Base
 
-#Modèle de la classe User, utilisateurs de l'API stockée dans la BDD SQLITE
-
-'''class User(db.Model):
-	__bin_key__ = 'users'
-	__tablename__ = "users"
-	id_user = Column(Integer, primary_key=True)
-	username = Column(String)
-	email = Column(String, unique=True)
-	isActive = Column(Boolean, default = True)'''
 
 # on définit les classes qui représentent les tables  de la BDD bikestore_db
 
@@ -78,3 +69,6 @@ class Store(Base):
 	city = Column(String)
 	state = Column(String)
 	zip_code = Column(String)
+
+
+

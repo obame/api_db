@@ -16,7 +16,3 @@ class Customer(BaseModel):
 	state: Optional[str] = None
 	zip_code: Optional[str] = None
 
-#autorise l'application à récupérer l'objet ORM et de le transformer en objet automatiquement
-
-	class Config:
-		orm_mode = True
