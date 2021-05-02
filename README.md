@@ -8,7 +8,10 @@ To execute a project, we must:
 ~$ docker network create -d bridge --subnet=172.18.0.0/16  api-network
 
 ~$ docker network connect api-network fastapi-app
+
 ~$ docker network connect api-network mysql 
+
+
 ~$ docker network connect api-network mongo 
 
 
